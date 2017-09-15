@@ -7,98 +7,106 @@
         mc:Ignorable="d"
         Title="BlackJack" Height="900" Width="1600">
     <Grid>
-        <Label x:Name="RoundLabel" Content="Round" HorizontalAlignment="Left" Height="30" Margin="40,50,0,0" VerticalAlignment="Top" Width="80"/>
-        <Label x:Name="TurnLabel" Content="Turn" HorizontalAlignment="Left" Height="30" Margin="40,95,0,0" VerticalAlignment="Top" Width="80"/>
-        <Label x:Name="BetLabel" Content="Current Bet" HorizontalAlignment="Left" Height="30" Margin="40,140,0,0" VerticalAlignment="Top" Width="80"/>
-        <Label x:Name="MoneyLabel" Content="Player Money" HorizontalAlignment="Left" Height="30" Margin="40,185,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="RoundLabel" Content="Round" HorizontalAlignment="Left" Height="45" Margin="40,50,0,0" 
+               VerticalAlignment="Top" Width="130" FontSize="30"/>
+        <Label x:Name="TurnLabel" Content="Turn" HorizontalAlignment="Left" Height="50" Margin="40,185,0,0" 
+               VerticalAlignment="Top" Width="130" FontSize="30"/>
+        <Label x:Name="BetLabel" Content="Current Bet" HorizontalAlignment="Left" Height="55" Margin="40,290,0,0" 
+               VerticalAlignment="Top" Width="215" FontSize="30"/>
+        <Label x:Name="MoneyLabel" Content="Player Money" HorizontalAlignment="Left" Height="57" Margin="40,408,0,0" 
+               VerticalAlignment="Top" Width="235" FontSize="30"/>
 
-        <Image x:Name="image" HorizontalAlignment="Left" Height="220" Margin="450,75,0,0" VerticalAlignment="Top" Width="160"
-               Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="220" Margin="640,75,0,0" VerticalAlignment="Top" Width="160"
-               Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy1" HorizontalAlignment="Left" Height="220" Margin="830,75,0,0" VerticalAlignment="Top" Width="160"
-               Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy2" HorizontalAlignment="Left" Height="70" Margin="1025,75,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy3" HorizontalAlignment="Left" Height="65" Margin="1025,150,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy4" HorizontalAlignment="Left" Height="65" Margin="1025,230,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/clubs/King-of-clubs.png"/>
-        <Image x:Name="image_Copy5" HorizontalAlignment="Left" Height="70" Margin="1100,75,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy6" HorizontalAlignment="Left" Height="65" Margin="1100,150,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy7" HorizontalAlignment="Left" Height="65" Margin="1100,230,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/clubs/King-of-clubs.png"/>
-        <Image x:Name="image_Copy8" HorizontalAlignment="Left" Height="70" Margin="1175,75,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy9" HorizontalAlignment="Left" Height="65" Margin="1175,150,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy10" HorizontalAlignment="Left" Height="65" Margin="1175,230,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/clubs/King-of-clubs.png"/>
-        <Image x:Name="image_Copy11" HorizontalAlignment="Left" Height="70" Margin="1240,75,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy12" HorizontalAlignment="Left" Height="65" Margin="1240,150,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy13" HorizontalAlignment="Left" Height="65" Margin="1240,230,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/clubs/King-of-clubs.png"/>
-        <Image x:Name="image_Copy14" HorizontalAlignment="Left" Height="70" Margin="1315,75,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy15" HorizontalAlignment="Left" Height="65" Margin="1315,150,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy16" HorizontalAlignment="Left" Height="65" Margin="1315,230,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/clubs/King-of-clubs.png"/>
-        <Image x:Name="image_Copy17" HorizontalAlignment="Left" Height="70" Margin="1390,75,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy18" HorizontalAlignment="Left" Height="65" Margin="1390,150,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy19" HorizontalAlignment="Left" Height="65" Margin="1390,230,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/clubs/King-of-clubs.png"/>
-        <Image x:Name="image_Copy20" HorizontalAlignment="Left" Height="225" Margin="595,575,0,0" VerticalAlignment="Top" Width="160"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy21" HorizontalAlignment="Left" Height="225" Margin="785,575,0,0" VerticalAlignment="Top" Width="160"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy22" HorizontalAlignment="Left" Height="225" Margin="975,575,0,0" VerticalAlignment="Top" Width="160"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy23" HorizontalAlignment="Left" Height="71" Margin="155,575,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy24" HorizontalAlignment="Left" Height="66" Margin="155,652,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy25" HorizontalAlignment="Left" Height="67" Margin="155,733,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/clubs/King-of-clubs.png"/>
-        <Image x:Name="image_Copy26" HorizontalAlignment="Left" Height="71" Margin="230,575,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy27" HorizontalAlignment="Left" Height="66" Margin="230,652,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy28" HorizontalAlignment="Left" Height="67" Margin="230,733,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/clubs/King-of-clubs.png"/>
-        <Image x:Name="image_Copy29" HorizontalAlignment="Left" Height="71" Margin="305,575,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy30" HorizontalAlignment="Left" Height="66" Margin="305,652,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy31" HorizontalAlignment="Left" Height="67" Margin="305,733,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/clubs/King-of-clubs.png"/>
-        <Image x:Name="image_Copy32" HorizontalAlignment="Left" Height="71" Margin="370,575,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy33" HorizontalAlignment="Left" Height="66" Margin="370,652,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy34" HorizontalAlignment="Left" Height="67" Margin="370,733,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/clubs/King-of-clubs.png"/>
-        <Image x:Name="image_Copy35" HorizontalAlignment="Left" Height="71" Margin="445,575,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy36" HorizontalAlignment="Left" Height="66" Margin="445,652,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy37" HorizontalAlignment="Left" Height="67" Margin="445,733,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/clubs/King-of-clubs.png"/>
-        <Image x:Name="image_Copy38" HorizontalAlignment="Left" Height="71" Margin="520,575,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy39" HorizontalAlignment="Left" Height="66" Margin="520,652,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/hearts/King-of-hearts.png"/>
-        <Image x:Name="image_Copy40" HorizontalAlignment="Left" Height="67" Margin="520,733,0,0" VerticalAlignment="Top" Width="45"
-            Source="cards/clubs/King-of-clubs.png"/>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="1210,605,0,0" VerticalAlignment="Top" Width="260" Height="70"/>
-        <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Left" Margin="1210,693,0,0" VerticalAlignment="Top" Width="260" Height="70"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="520,345,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="145" Width="505"/>
+        <Image x:Name="dealerCardImage1" HorizontalAlignment="Left" Height="220" Margin="450,75,0,0" VerticalAlignment="Top" Width="160"
+               Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage2" HorizontalAlignment="Left" Height="220" Margin="640,75,0,0" VerticalAlignment="Top" Width="160"
+               Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage3" HorizontalAlignment="Left" Height="220" Margin="830,75,0,0" VerticalAlignment="Top" Width="160"
+               Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage4" HorizontalAlignment="Left" Height="65" Margin="1025,75,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage5" HorizontalAlignment="Left" Height="65" Margin="1025,150,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage6" HorizontalAlignment="Left" Height="65" Margin="1025,230,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage7" HorizontalAlignment="Left" Height="65" Margin="1100,75,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage8" HorizontalAlignment="Left" Height="65" Margin="1100,150,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage9" HorizontalAlignment="Left" Height="65" Margin="1100,230,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage10" HorizontalAlignment="Left" Height="65" Margin="1175,75,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage11" HorizontalAlignment="Left" Height="65" Margin="1175,150,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage12" HorizontalAlignment="Left" Height="65" Margin="1175,230,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage13" HorizontalAlignment="Left" Height="65" Margin="1240,75,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage14" HorizontalAlignment="Left" Height="65" Margin="1240,150,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage15" HorizontalAlignment="Left" Height="65" Margin="1240,230,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage16" HorizontalAlignment="Left" Height="65" Margin="1315,75,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage17" HorizontalAlignment="Left" Height="65" Margin="1315,150,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage18" HorizontalAlignment="Left" Height="65" Margin="1315,230,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage19" HorizontalAlignment="Left" Height="65" Margin="1390,75,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage20" HorizontalAlignment="Left" Height="65" Margin="1390,150,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+        <Image x:Name="dealerCardImage21" HorizontalAlignment="Left" Height="65" Margin="1390,230,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-red.png"/>
+
+        <Image x:Name="playerCardImage1" HorizontalAlignment="Left" Height="225" Margin="975,575,0,0" VerticalAlignment="Top" Width="160"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage2" HorizontalAlignment="Left" Height="225" Margin="785,575,0,0" VerticalAlignment="Top" Width="160"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage3" HorizontalAlignment="Left" Height="225" Margin="595,575,0,0" VerticalAlignment="Top" Width="160"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage4" HorizontalAlignment="Left" Height="65" Margin="520,575,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage5" HorizontalAlignment="Left" Height="65" Margin="520,652,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage6" HorizontalAlignment="Left" Height="65" Margin="520,733,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage7" HorizontalAlignment="Left" Height="65" Margin="445,575,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage8" HorizontalAlignment="Left" Height="65" Margin="445,652,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage9" HorizontalAlignment="Left" Height="65" Margin="445,733,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage10" HorizontalAlignment="Left" Height="65" Margin="375,575,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage11" HorizontalAlignment="Left" Height="65" Margin="375,652,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage12" HorizontalAlignment="Left" Height="65" Margin="375,733,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage13" HorizontalAlignment="Left" Height="65" Margin="305,575,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage14" HorizontalAlignment="Left" Height="65" Margin="305,652,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage15" HorizontalAlignment="Left" Height="65" Margin="305,733,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage16" HorizontalAlignment="Left" Height="65" Margin="230,575,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage17" HorizontalAlignment="Left" Height="65" Margin="230,652,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage18" HorizontalAlignment="Left" Height="65" Margin="230,733,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage19" HorizontalAlignment="Left" Height="65" Margin="155,575,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage20" HorizontalAlignment="Left" Height="65" Margin="155,652,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+        <Image x:Name="playerCardImage21" HorizontalAlignment="Left" Height="65" Margin="155,733,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/Card-backs-grid-blue.png"/>
+
+        <Button x:Name="standButton" Content="Stand" HorizontalAlignment="Left" Margin="1210,605,0,0" VerticalAlignment="Top" Width="260" Height="70"/>
+        <Button x:Name="hitButton" Content="Hit" HorizontalAlignment="Left" Margin="1210,693,0,0" VerticalAlignment="Top" Width="260" Height="70"/>
+
+        <TextBlock x:Name="Notifications" HorizontalAlignment="Left" Margin="520,345,0,0" TextWrapping="Wrap" Text="Game Start" 
+                   VerticalAlignment="Top" Height="145" Width="505" FontSize="75" TextAlignment="Center"/>
 
     </Grid>
 </Window>
