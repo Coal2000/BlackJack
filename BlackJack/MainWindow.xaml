@@ -5,8 +5,100 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlackJack"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="BlackJack" Height="900" Width="1600">
     <Grid>
-        
+        <Label x:Name="RoundLabel" Content="Round" HorizontalAlignment="Left" Height="30" Margin="40,50,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="TurnLabel" Content="Turn" HorizontalAlignment="Left" Height="30" Margin="40,95,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="BetLabel" Content="Current Bet" HorizontalAlignment="Left" Height="30" Margin="40,140,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="MoneyLabel" Content="Player Money" HorizontalAlignment="Left" Height="30" Margin="40,185,0,0" VerticalAlignment="Top" Width="80"/>
+
+        <Image x:Name="image" HorizontalAlignment="Left" Height="220" Margin="450,75,0,0" VerticalAlignment="Top" Width="160"
+               Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="220" Margin="640,75,0,0" VerticalAlignment="Top" Width="160"
+               Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy1" HorizontalAlignment="Left" Height="220" Margin="830,75,0,0" VerticalAlignment="Top" Width="160"
+               Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy2" HorizontalAlignment="Left" Height="70" Margin="1025,75,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy3" HorizontalAlignment="Left" Height="65" Margin="1025,150,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy4" HorizontalAlignment="Left" Height="65" Margin="1025,230,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/clubs/King-of-clubs.png"/>
+        <Image x:Name="image_Copy5" HorizontalAlignment="Left" Height="70" Margin="1100,75,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy6" HorizontalAlignment="Left" Height="65" Margin="1100,150,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy7" HorizontalAlignment="Left" Height="65" Margin="1100,230,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/clubs/King-of-clubs.png"/>
+        <Image x:Name="image_Copy8" HorizontalAlignment="Left" Height="70" Margin="1175,75,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy9" HorizontalAlignment="Left" Height="65" Margin="1175,150,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy10" HorizontalAlignment="Left" Height="65" Margin="1175,230,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/clubs/King-of-clubs.png"/>
+        <Image x:Name="image_Copy11" HorizontalAlignment="Left" Height="70" Margin="1240,75,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy12" HorizontalAlignment="Left" Height="65" Margin="1240,150,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy13" HorizontalAlignment="Left" Height="65" Margin="1240,230,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/clubs/King-of-clubs.png"/>
+        <Image x:Name="image_Copy14" HorizontalAlignment="Left" Height="70" Margin="1315,75,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy15" HorizontalAlignment="Left" Height="65" Margin="1315,150,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy16" HorizontalAlignment="Left" Height="65" Margin="1315,230,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/clubs/King-of-clubs.png"/>
+        <Image x:Name="image_Copy17" HorizontalAlignment="Left" Height="70" Margin="1390,75,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy18" HorizontalAlignment="Left" Height="65" Margin="1390,150,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy19" HorizontalAlignment="Left" Height="65" Margin="1390,230,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/clubs/King-of-clubs.png"/>
+        <Image x:Name="image_Copy20" HorizontalAlignment="Left" Height="225" Margin="595,575,0,0" VerticalAlignment="Top" Width="160"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy21" HorizontalAlignment="Left" Height="225" Margin="785,575,0,0" VerticalAlignment="Top" Width="160"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy22" HorizontalAlignment="Left" Height="225" Margin="975,575,0,0" VerticalAlignment="Top" Width="160"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy23" HorizontalAlignment="Left" Height="71" Margin="155,575,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy24" HorizontalAlignment="Left" Height="66" Margin="155,652,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy25" HorizontalAlignment="Left" Height="67" Margin="155,733,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/clubs/King-of-clubs.png"/>
+        <Image x:Name="image_Copy26" HorizontalAlignment="Left" Height="71" Margin="230,575,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy27" HorizontalAlignment="Left" Height="66" Margin="230,652,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy28" HorizontalAlignment="Left" Height="67" Margin="230,733,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/clubs/King-of-clubs.png"/>
+        <Image x:Name="image_Copy29" HorizontalAlignment="Left" Height="71" Margin="305,575,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy30" HorizontalAlignment="Left" Height="66" Margin="305,652,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy31" HorizontalAlignment="Left" Height="67" Margin="305,733,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/clubs/King-of-clubs.png"/>
+        <Image x:Name="image_Copy32" HorizontalAlignment="Left" Height="71" Margin="370,575,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy33" HorizontalAlignment="Left" Height="66" Margin="370,652,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy34" HorizontalAlignment="Left" Height="67" Margin="370,733,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/clubs/King-of-clubs.png"/>
+        <Image x:Name="image_Copy35" HorizontalAlignment="Left" Height="71" Margin="445,575,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy36" HorizontalAlignment="Left" Height="66" Margin="445,652,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy37" HorizontalAlignment="Left" Height="67" Margin="445,733,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/clubs/King-of-clubs.png"/>
+        <Image x:Name="image_Copy38" HorizontalAlignment="Left" Height="71" Margin="520,575,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy39" HorizontalAlignment="Left" Height="66" Margin="520,652,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/hearts/King-of-hearts.png"/>
+        <Image x:Name="image_Copy40" HorizontalAlignment="Left" Height="67" Margin="520,733,0,0" VerticalAlignment="Top" Width="45"
+            Source="cards/clubs/King-of-clubs.png"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="1210,605,0,0" VerticalAlignment="Top" Width="260" Height="70"/>
+        <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Left" Margin="1210,693,0,0" VerticalAlignment="Top" Width="260" Height="70"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="520,345,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="145" Width="505"/>
+
     </Grid>
 </Window>
