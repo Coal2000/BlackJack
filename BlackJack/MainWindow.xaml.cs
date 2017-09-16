@@ -20,9 +20,53 @@ namespace BlackJack
     /// </summary>
     public partial class MainWindow : Window
     {
+        public delegate void NextDelegate();
+
+        private short playerScore, dealerScore;
+        private int bet, money;
+
         public MainWindow()
         {
             InitializeComponent();
+            RoundCount.Text = "1";
+            money = 100;
+            MoneyAmount.Text = "100";
+            TurnPerson.Text = "Player's";
+            bet = 1;
+            BetAmount.Text = "1";
+        }
+
+        private void standClick(object sender, RoutedEventArgs e)
+        {
+            hitButton.FontSize = 10;
+            if(playerScore > dealerScore)
+            {
+                Notifications.Text = "You Win!";
+                money += 2 * bet;
+                MoneyAmount.Text = money.ToString();
+
+            }
+            else if(playerScore < dealerScore)
+            {
+                Notifications.Text = "You Lose";
+            }
+            else
+            {
+                Notifications.Text = "Tied Round";
+                money += bet;
+                MoneyAmount.Text = money.ToString();
+            }
+            roundSetup();
+        }
+
+        private void hitClick(object sender, RoutedEventArgs e)
+        {
+            this.Title = "Clicked";
+        }
+
+        public void roundSetup()
+        {
+
         }
     }
 }
