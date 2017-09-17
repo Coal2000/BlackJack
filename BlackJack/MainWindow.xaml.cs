@@ -23,17 +23,20 @@ namespace BlackJack
         public delegate void NextDelegate();
 
         private short playerScore, dealerScore;
-        private int bet, money;
+        private int bet, money, round;
+        Deck mainDeck;
 
         public MainWindow()
         {
             InitializeComponent();
-            RoundCount.Text = "1";
-            money = 100;
-            MoneyAmount.Text = "100";
+            round = 1;
+            RoundCount.Text = round.ToString();
+            money = 99;
+            MoneyAmount.Text = money.ToString();
             TurnPerson.Text = "Player's";
             bet = 1;
-            BetAmount.Text = "1";
+            BetAmount.Text = bet.ToString();
+            mainDeck = new Deck();
         }
 
         private void standClick(object sender, RoutedEventArgs e)
@@ -66,7 +69,19 @@ namespace BlackJack
 
         public void roundSetup()
         {
+            round++;
+            RoundCount.Text = round.ToString();
+            money -= bet;
+            Card one = mainDeck.PickACard();
+            System.Diagnostics.Debug.WriteLine(one.image);
 
+            BitmapImage image = new BitmapImage();
+            image.BeginInit();
+            image.UriSource = new Uri("pack://application:,,,/cards/" + one.image);
+            image.EndInit();
+            
+            dealerCardImage1.Source = image;
+            dealerCardImage4.Source = image;
         }
     }
 }
