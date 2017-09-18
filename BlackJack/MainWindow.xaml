@@ -10,22 +10,18 @@
         <!--Round labels-->
         <Label x:Name="RoundLabel" Content="Round" HorizontalAlignment="Left" Height="50" Margin="40,50,0,0" 
                VerticalAlignment="Top" Width="100" FontSize="30"/>
-        <Label x:Name="TurnLabel" Content="Turn" HorizontalAlignment="Left" Height="50" Margin="160,193,0,0" 
-               VerticalAlignment="Top" Width="130" FontSize="30"/>
-        <Label x:Name="BetLabel" Content="Current Bet" HorizontalAlignment="Left" Height="50" Margin="40,290,0,0" 
-               VerticalAlignment="Top" Width="200" FontSize="30"/>
-        <Label x:Name="MoneyLabel" Content="Player Money" HorizontalAlignment="Left" Height="50" Margin="40,408,0,0" 
+        <Label x:Name="BetLabel" Content="Current Bet" HorizontalAlignment="Left" Height="50" Margin="40,193,0,0" 
+               VerticalAlignment="Top" Width="160" FontSize="30"/>
+        <Label x:Name="MoneyLabel" Content="Player Money" HorizontalAlignment="Left" Height="50" Margin="40,345,0,0" 
                VerticalAlignment="Top" Width="200" FontSize="30"/>
 
         <!--Round information-->
-        <TextBlock x:Name="RoundCount" HorizontalAlignment="Left" Height="45" Margin="160,50,0,0" TextWrapping="Wrap" 
-               Text="0" VerticalAlignment="Top" Width="95" FontSize="30" TextAlignment="Center"/>
-        <TextBlock x:Name="TurnPerson" HorizontalAlignment="Left" Height="50" Margin="55,193,0,0" TextWrapping="Wrap" 
-               Text="Blank's" VerticalAlignment="Top" Width="100" FontSize="30" TextAlignment="Center"/>
-        <TextBlock x:Name="BetAmount" HorizontalAlignment="Left" Margin="245,290,0,0" TextWrapping="Wrap" Text="0" 
-               VerticalAlignment="Top" Height="50" Width="125" FontSize="30" TextAlignment="Center"/>
-        <TextBlock x:Name="MoneyAmount" HorizontalAlignment="Left" Margin="270,408,0,0" TextWrapping="Wrap" Text="0" 
-               VerticalAlignment="Top" Height="50" Width="125" FontSize="30" TextAlignment="Center"/>
+        <TextBlock x:Name="RoundCount" HorizontalAlignment="Left" Height="45" Margin="155,55,0,0" TextWrapping="Wrap" 
+               Text="0" VerticalAlignment="Top" Width="95" FontSize="30" TextAlignment="Left"/>
+        <TextBlock x:Name="BetAmount" HorizontalAlignment="Left" Margin="225,198,0,0" TextWrapping="Wrap" Text="0" 
+               VerticalAlignment="Top" Height="50" Width="125" FontSize="30" TextAlignment="Left"/>
+        <TextBlock x:Name="MoneyAmount" HorizontalAlignment="Left" Margin="240,350,0,0" TextWrapping="Wrap" Text="0" 
+               VerticalAlignment="Top" Height="50" Width="125" FontSize="30" TextAlignment="Left"/>
 
         <!--Dealer's cards-->
         <Image x:Name="dealerCardImage1" HorizontalAlignment="Left" Height="220" Margin="450,75,0,0" VerticalAlignment="Top" Width="160"
@@ -116,14 +112,43 @@
             Source="cards/Card-backs-grid-blue.png"/>
 
         <!--Player's buttons-->
-        <Button x:Name="standButton" Content="Stand" HorizontalAlignment="Left" Margin="1210,605,0,0" 
+        <Button x:Name="standButton" Content="Stand" HorizontalAlignment="Left" Margin="1240,570,0,0" 
                 VerticalAlignment="Top" Width="260" Height="70" FontSize="30" Click="standClick"/>
-        <Button x:Name="hitButton" Content="Hit" HorizontalAlignment="Left" Margin="1210,693,0,0" 
+        <Button x:Name="hitButton" Content="Hit" HorizontalAlignment="Left" Margin="1240,658,0,0" 
                 VerticalAlignment="Top" Width="260" Height="70" FontSize="30" Click="hitClick"/>
+        <Button x:Name="nextButton" Content="Next Round" HorizontalAlignment="Left" Margin="1240,744,0,0" 
+                VerticalAlignment="Top" Width="260" Height="70" FontSize="30" Click="nextClick"/>
+
+        <!--Player Options-->
+        <Label x:Name="DeckLabel" Content="# of Decks" HorizontalAlignment="Left" Margin="1210,317,0,0" VerticalAlignment="Top" 
+            Height="47" Width="150" FontSize="30"/>
+        <TextBlock x:Name="DeckCount" HorizontalAlignment="Left" Margin="1370,322,0,0" TextWrapping="Wrap" Text="0" 
+            VerticalAlignment="Top" Height="50" Width="30" FontSize="30" TextAlignment="Left"/>
+        <ScrollBar x:Name="DeckScrollBar" HorizontalAlignment="Left" Margin="1430,325,0,0" VerticalAlignment="Top" Height="47" 
+            Width="30" Minimum="1" Maximum="8"  Value="1"  Scroll="DeckScroll" SmallChange="1" RenderTransformOrigin="0.5,0.5">
+            <ScrollBar.RenderTransform>
+                <RotateTransform Angle="180"/>
+            </ScrollBar.RenderTransform>
+        </ScrollBar>
+        <Label x:Name="BetChangeLabel" Content="Next Bet" HorizontalAlignment="Left" Margin="1210,404,0,0" VerticalAlignment="Top" 
+               Height="47" Width="130" FontSize="30"/>
+        <TextBlock x:Name="NextBetAmount" HorizontalAlignment="Left" Margin="1345,409,0,0" TextWrapping="Wrap" Text="0" 
+            VerticalAlignment="Top" Height="50" Width="70" FontSize="30" TextAlignment="Left"/>
+        <ScrollBar x:Name="BetScrollBar" HorizontalAlignment="Left" Margin="1430,410,0,0" VerticalAlignment="Top" Height="47" 
+                   Width="30" Minimum="1" Maximum="99"  Value="1"  Scroll="BetScroll" SmallChange="1" RenderTransformOrigin="0.5,0.5">
+            <ScrollBar.RenderTransform>
+                <RotateTransform Angle="180"/>
+            </ScrollBar.RenderTransform>
+        </ScrollBar>
+        <Label x:Name="ScoreLabel" Content="Player Score" HorizontalAlignment="Left" Height="50" Margin="1210,490,0,0" 
+               VerticalAlignment="Top" Width="175" FontSize="30"/>
+        <TextBlock x:Name="ScoreCount" HorizontalAlignment="Left" Height="50" Margin="1385,495,0,0" TextWrapping="Wrap" 
+               Text="0" VerticalAlignment="Top" Width="145" FontSize="30" TextAlignment="Center"/>
+
 
         <!--General game updates-->
         <TextBlock x:Name="Notifications" HorizontalAlignment="Left" Margin="520,345,0,0" TextWrapping="Wrap" Text="Game Start" 
                    VerticalAlignment="Top" Height="145" Width="505" FontSize="75" TextAlignment="Center"/>
-        
+
     </Grid>
 </Window>

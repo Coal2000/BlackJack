@@ -12,32 +12,37 @@ namespace BlackJack
 
         public Deck()
         {
+            BuildDeck();
+        }
+
+        public void BuildDeck()
+        {
             cardList = new List<Card>();
             string[] suits = { "clubs", "diamonds", "hearts", "spades" };
 
             short V, suit = 0;
             string I;
-            for(short x = 1; x < 14; x++)
+            for (short x = 1; x < 14; x++)
             {
-                if(x == 1)
+                if (x == 1)
                 {
                     V = x;
                     I = suits[suit] + "/Ace-of-" + suits[suit] + ".png";
                 }
-                else if(x > 10)
+                else if (x > 10)
                 {
-                    if(x == 11)
+                    if (x == 11)
                     {
                         I = suits[suit] + "/Jack-of-" + suits[suit] + ".png";
                     }
-                    else if(x == 12)
+                    else if (x == 12)
                     {
                         I = suits[suit] + "/King-of-" + suits[suit] + ".png";
                     }
                     else
                     {
                         I = suits[suit] + "/Queen-of-" + suits[suit] + ".png";
-                        if(suit < 3)
+                        if (suit < 3)
                         {
                             suit++;
                             x = 0;
@@ -52,6 +57,12 @@ namespace BlackJack
                 }
                 cardList.Add(new Card { value = V, image = I });
             }
+        }
+
+        public void ResetDeck()
+        {
+            cardList.Clear();
+            BuildDeck();
         }
 
         public Card PickACard()
