@@ -179,6 +179,7 @@ namespace BlackJack
             if(bet > money){ bet = money; }
             BetAmount.Text = bet.ToString();
             BetScrollBar.Maximum = money;
+            money -= bet;
             MoneyAmount.Text = money.ToString();
             pAce = false;
             dAce = false;
@@ -189,7 +190,6 @@ namespace BlackJack
             round++;
             RoundCount.Text = round.ToString();
             Notifications.Text = "Round " + round.ToString();
-            money -= bet;
             Card pOne = takeCard();
             if(pOne.value == 1) { pAce = true; }
             pCards.Add(pOne.value);
